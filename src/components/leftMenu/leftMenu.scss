@@ -1,0 +1,117 @@
+@import '../stylesAndMixins/stylesAndMixins.scss';
+
+.leftMenuWrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: $componentsBgColor;
+    width: 256px;
+    height: 100%;
+    box-shadow: $boxShadowRffect;
+
+    @media (max-width:800px) {
+        width: 70px;
+    }
+}
+.leftMenuWrapperContainer{
+    width: 256px;
+    height: 470px;
+
+}
+.helthcare{
+    width: 208px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.helthcareWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.helthcareText{
+    @include headingTextStyle;
+    color: $blueIconsCollor;
+    width: 170px;
+
+    @media (max-width:800px) {
+        display: none;
+    }
+
+}
+.medicineContainer{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+}
+.medicine{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.medecineText{
+    color: $grayPenColor;
+    width: 208px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width:800px) {
+        display: none;
+    }
+}
+.border{
+    width: 100%;
+    height: 1px;
+    border: 1px solid gainsboro;
+}
+// .pieIcon{
+//     width: 14px;
+//     height: 14px;
+    
+// }
+// .dashboardContainer{
+//     width: 100%;
+//     height: 48px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+// .dashboard{
+//     width: 208px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+// }
+// .dashboardText{
+//     @include leftMenuTextStyle;
+//     width: 180px;
+//     height: 20px;
+
+// }
+// .doctorIcon{
+//     width: 14px;
+//     height: 14px;
+    
+// }
+// .doctorContainer{
+//     width: 100%;
+//     height: 48px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+// .doctor{
+//     width: 208px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+// }
+// .doctorText{
+//     @include leftMenuTextStyle;
+//     width: 180px;
+//     height: 20px;
+
+// }

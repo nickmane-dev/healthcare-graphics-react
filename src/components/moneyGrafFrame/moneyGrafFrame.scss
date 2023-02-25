@@ -1,0 +1,32 @@
+// @import '../stylesAndMixins/stylesAndMixins.scss';
+
+// .graph-wrapper {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .toolTip {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 60px;
+//     height: 24px;
+//     background-color: #fff;
+//     box-shadow: 0px 0px 8px rgba(16, 30, 115, 0.12);
+//     border-radius: 4px;
+
+//     .toolText {
+//         @include smallTextMedium;
+//         color: $graphicBlueLine;
+//     }
+
+//     .toolTextY {
+//         @include smallTextMedium;
+//         color: $graphicYelowLine;
+//     }
+// }
+
+// .recharts-layer {
+//     @include smallTextSmall;
+//     color: $smallLightGrayText;
+// }

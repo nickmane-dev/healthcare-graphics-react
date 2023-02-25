@@ -1,0 +1,60 @@
+@import '../stylesAndMixins/stylesAndMixins.scss';
+
+
+.blockWrapper{
+    width: 290px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFF;
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
+    @media (max-width: 1600px) {
+        width: 250px;        
+    }
+    @media (max-width: 1200px) {
+        width: 400px;        
+    }
+    @media (max-width: 500px) {
+        width: 250px;        
+    }
+    
+
+    margin-top: 10px;
+
+}
+.elementsBlock{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media (max-width: 1200px) {
+        width: 300px;        
+    }
+
+    
+}
+.blockForImg{
+    height: 40px;
+    width: 40px;
+}
+.blockForText{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50px
+}
+.upText{
+    @include mediumTextStyle;
+    width: 143px;
+    height: 20px;
+}
+.downText{
+    @include afterSearchFrameBlueTextStyle;
+    width: 143px;
+    height: 20px;
+}

@@ -1,0 +1,81 @@
+$blueTextOnClick: #336CFB;
+$blueIconsCollor: #558EFF;
+$grayPenColor: #A0A4A8;
+$redTrashcanColor: #FF6760;
+$leftMenuTextColor: #52575C;
+$thiccTextColor: #25282B;
+$grayPacientsBgColor: #E8E8E8;
+$componentsBgColor: #FFFFFF;
+$boxShadowRffect: 0px 12px 26px rgba(16, 30, 115, 0.06);
+$bgCollor: #F6F8FB;
+
+@mixin headingTextStyle {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.20000000298023224px;
+    color: $thiccTextColor;
+}
+@mixin leftMenuTextStyle {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.10000000149011612px;
+    color: $leftMenuTextColor;
+}
+@mixin pacientsTextStyle {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.10000000149011612px;
+    color: $thiccTextColor;
+
+    
+    
+}
+@mixin mediumTextStyle {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.10000000149011612px;
+    color: $thiccTextColor;
+}
+@mixin bigTextStyle {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.20000000298023224px;
+    color: $thiccTextColor;
+    
+}
+@mixin afterSearchFrameBlueTextStyle {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: $blueTextOnClick;
+}
+@mixin searchPanelTextStyle {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: $grayPenColor;
+}
+@mixin notificationTextStyle {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+}

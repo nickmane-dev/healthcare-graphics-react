@@ -1,0 +1,71 @@
+@import '../stylesAndMixins/stylesAndMixins.scss';
+.wrapperHospital{
+    margin: 0 auto;
+    
+    width: 90%;
+    height: 374px;
+    background-color: white;    
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
+    @media (max-width:1600px) {
+        //margin-right: 225px;
+        width: 90%;
+    }
+    @media (max-width:1200px) {
+        margin-top: 200px;
+    }
+}
+.containerHospital{
+    padding: 25px 25px 25px 0px;
+}
+.hospitalTop{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center
+}
+.hospitalH{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    color: #25282B;
+    margin: 0;
+}
+.hospitalRightText{
+ display: flex;
+ flex-direction: row;
+    :nth-child(2){
+        margin-left:50px ;
+    }
+}
+.textGray{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #A0A4A8;
+    margin: 0;
+    text-align: center;
+}
+.hospitalBottom{
+    height: 300px;
+    padding: 0;
+    margin: 0 0 0 0 ;   
+}
+.yellow{
+    color: #FAC032;
+    border: 2px;
+
+}
+.blue{
+    color: #336CFB;
+    border: 2px;   
+    
+}

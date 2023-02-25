@@ -1,0 +1,222 @@
+@import '../stylesAndMixins/stylesAndMixins.scss';
+
+.bpacientsWrapper{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 778px;
+    @media (max-width:1600px) {
+        width: 780px;
+        
+    }
+    @media (max-width: 1111px) {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    @media (max-width: 800px) {
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    @media (max-width: 560px) {
+        width: 220px;
+    }
+    
+}
+
+.bpacientsContainer{
+    width: 1500px;
+    height: 100%;
+    background-color: $bgCollor;
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1600px) {
+        align-items:flex-start;
+        width: 1070px;        
+    }
+
+    @media (max-width: 1111px) {
+        align-items: center;
+        width: 538px;
+    }
+    @media (max-width: 800px) {
+        align-items: center;
+    }
+    @media (max-width: 560px) {
+        width: 220px;
+    }
+    
+}
+.btopText{
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    width: 1450px;
+
+    @media (max-width: 1600px) {
+        width: 722px;
+    }
+    @media (max-width: 1111px) {
+        width: 538px;
+    }
+    @media (max-width: 560px) {
+        width: 220px;
+    }
+}
+.btopTextStyle{
+    @include bigTextStyle;
+}
+.bTopTextWrapper{
+    background-color: $bgCollor;
+}
+.bgrayHead{
+    display: flex;
+    width: 100%;
+    min-height: 56px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #E8E8E8;
+    border-bottom: 2px solid #DBDDE0;
+
+    @media (max-width: 1600px) {
+        justify-content: flex-start;
+        padding-left: 25px;
+       
+        width: 780px;
+        
+    }
+    @media (max-width: 1111px) {
+        width: 538px;
+    }
+    @media (max-width: 560px) {
+        width: 220px;
+    }
+}
+.bgrayHeadContainer{
+    width: 1450px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1600px) {
+        width: 70%;
+    }
+}
+.bnameText{
+    width: 224px;
+    height: 20px;
+    @include leftMenuTextStyle;
+    color: $leftMenuTextColor;
+}
+.bemailText{
+    width: 194px;
+    height: 20px;
+    @include leftMenuTextStyle;
+    color: $leftMenuTextColor;
+
+    @media (max-width: 1600px) {
+        display: none;
+    }
+}
+.bdateText{
+    width: 96px;
+    height: 20px;
+    @include leftMenuTextStyle;
+    color: $leftMenuTextColor;
+    @media (max-width: 560px) {
+        display: none;
+    }
+}
+.bvisitTimeText{
+    width: 104px;
+    height: 20px;
+    @include leftMenuTextStyle;
+    color: $leftMenuTextColor;
+
+    @media (max-width:1600px) {
+        display: none;
+    }
+}
+.bdoctorText{
+    width: 122px;
+    height: 20px;
+    @include leftMenuTextStyle;
+    color: $leftMenuTextColor;
+
+    @media (max-width:1600px) {
+        width: 69px;
+    }
+    @media (max-width: 560px) {
+        display: none;
+    }
+}
+.bconditionsText{
+    width: 255px;
+    height: 20px;
+    @include leftMenuTextStyle;
+    color: $leftMenuTextColor;
+
+    @media (max-width:1600px) {
+        width: 0px;
+        display: none
+    }
+}
+.bb{
+    border: 1px solid #DBDDE0;
+    width: 100%;
+
+    @media (max-width:1600px) {
+        width: 780px;
+    }
+    @media (max-width: 1111px) {
+        width: 538px;
+    }
+    @media (max-width: 560px) {
+        width: 220px;
+    }
+
+}
+
+.pagesPanelWrapper{
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagesPanelContainer{
+    height: 32px;
+    width: 176px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #FFFF;
+    
+}
+.contentWrapper{
+    width: 1450px;
+}
+.firstButton{
+    background-color: $blueTextOnClick;
+}
+.buttonNumber{
+    @include searchPanelTextStyle;
+    color: $thiccTextColor;
+}
+.fristNum{
+    color: #FFFF;
+}

@@ -1,0 +1,118 @@
+@import '../stylesAndMixins/stylesAndMixins.scss';
+
+.searchFrameWrapper1{
+    display: flex;
+    height: 88px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width:1200px) {
+        //margin-top: 400px;
+    }
+}
+.searchPanel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+}
+.searchFormImg{
+    width: 14px;
+    height: 14px;
+}
+.searchForm{
+    width: 350px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-left: 20px;
+
+    @media (max-width: 1600px) {
+        margin-left: 70px;
+    }  
+    @media (max-width: 600px) {
+        margin-left: 20px;
+        width: 200px;
+    }  
+
+
+}
+.searchPanel{
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+
+}
+.searchFormBtn{
+    height: 100%;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    width: 40px
+}
+.searchFormText{
+    @include searchPanelTextStyle;
+    height: 16px;
+    width: 292px;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    outline: none;
+    
+}
+.searchPanelBellAndImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85px;
+    @media (max-width: 1600px) {
+        position: relative;
+        right: 70px;
+    }
+    @media (max-width: 800px) {
+        position: relative;
+        right: 30px;
+    }
+}
+.imgContainer{
+    height: 21px;
+    width: 21px;
+    border: 1px solid transparent;
+    position: relative;
+    background: url(../img/bellIcon.svg) no-repeat;
+    background-size: auto;
+    
+}
+.countConainer{
+    width: 15px;
+    height: 15px;
+    
+    
+    background-color: #FF6760;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+.countText{
+    @include notificationTextStyle;
+}
+.photoContainer{
+    height: auto;
+    width: auto;
+    
+}
+.manButton{
+    background-color: $bgCollor;
+    border: 3px solid $grayPenColor;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+}

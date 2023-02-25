@@ -1,0 +1,128 @@
+@import '../../stylesAndMixins/stylesAndMixins.scss';
+
+.pacientsInfoWrapper{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1600px) {
+        height: 160px;
+        width: 70%;
+    }
+    @media (max-width: 560px) {
+        width: 100%;
+    }
+}
+.pacientsInfoContainer{
+    display: flex;
+    width: 1450px;
+    flex-direction: column;
+
+    @media (max-width: 1600px) {
+        padding-left: 10px;
+    }
+    @media (max-width: 500px) {
+        padding-left: 3px;
+    }
+}
+.pacientsInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgAndName{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 228px;
+    justify-content: space-between;
+
+    @media (max-width: 560px) {
+        width: 50px;
+    }
+    
+}
+.faceImg{
+    width: 32px;
+    height: 32px;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
+}
+.nameTextInside{
+    @include pacientsTextStyle;
+    height: 20px;
+    width: 180px;
+}
+.email{
+    width: 194px;
+    height: 20px;
+
+    @media (max-width: 1600px) {
+        display: none;
+    }
+}
+.emailTextInside{
+    @include pacientsTextStyle;
+
+}
+.date{
+    width: 96px;
+    height: 20px;
+    @media (max-width: 560px) {
+        display: none;
+    }
+}
+.dateTextInside{
+    @include pacientsTextStyle;
+
+}
+.visitTime{
+    width: 104px;
+    height: 20px;
+
+    @media (max-width:1600px) {
+        display: none;
+    }
+}
+.visitTimeTextInside{
+    @include pacientsTextStyle;
+
+}
+.doctor{
+    width: 122px;
+    height: 20px;
+}
+.doctorTextInside{
+    @include pacientsTextStyle;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
+
+}
+.conditions{
+    width: 128px;
+    height: 20px;
+
+    @media (max-width:1600px) {
+        display: none;
+    }
+}
+.conditionsTextInside{
+    @include pacientsTextStyle;
+
+}
+.penIcon{
+    width: 16px;
+    height: 16px;
+}
+
+.penAndTrashcan{
+    display: flex;
+    justify-content: space-between;
+    width: 45px;
+    height: 16px;
+}

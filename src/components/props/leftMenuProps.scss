@@ -1,0 +1,30 @@
+@import '../stylesAndMixins/stylesAndMixins.scss';
+
+
+.styledImg{
+    width: 14px;
+    height: 14px;
+}
+.container{
+    width: 208px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.containerWrapper{
+    width: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.containerText{
+    @include leftMenuTextStyle;
+    width: 180px;
+    height: 20px;
+
+    @media (max-width:800px) {
+        color: white;    
+    }
+
+}

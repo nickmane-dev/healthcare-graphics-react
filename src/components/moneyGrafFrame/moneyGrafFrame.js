@@ -1,0 +1,2 @@
+import './moneyGrafFrame.scss';
+
